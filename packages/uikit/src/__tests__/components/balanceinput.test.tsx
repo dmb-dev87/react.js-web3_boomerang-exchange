@@ -1,4 +1,3 @@
-import React from "react";
 import { renderWithTheme } from "../../testHelpers";
 import BalanceInput from "../../components/BalanceInput/BalanceInput";
 

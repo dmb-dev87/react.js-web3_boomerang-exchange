@@ -1,4 +1,3 @@
-import React from "react";
 import { renderWithTheme } from "../../testHelpers";
 import Radio from "../../components/Radio/Radio";
 

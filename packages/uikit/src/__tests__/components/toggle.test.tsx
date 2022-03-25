@@ -1,4 +1,3 @@
-import React from "react";
 import { renderWithTheme } from "../../testHelpers";
 import Toggle from "../../components/Toggle/Toggle";
 

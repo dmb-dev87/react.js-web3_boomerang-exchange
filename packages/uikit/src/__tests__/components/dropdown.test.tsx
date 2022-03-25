@@ -1,4 +1,3 @@
-import React from "react";
 import { renderWithTheme } from "../../testHelpers";
 import Dropdown from "../../components/Dropdown/Dropdown";
 

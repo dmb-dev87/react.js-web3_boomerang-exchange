@@ -1,4 +1,3 @@
-import React from "react";
 import { renderWithTheme } from "../../testHelpers";
 import NotificationDot from "../../components/NotificationDot/NotificationDot";
 
