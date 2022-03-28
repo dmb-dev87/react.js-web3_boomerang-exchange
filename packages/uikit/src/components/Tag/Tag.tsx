@@ -22,8 +22,4 @@ Tag.defaultProps = {
   outline: false,
 };
 
-Tag.propTypes = {
-  variant: PropTypes.string
-}
-
 export default Tag;
