@@ -19,66 +19,33 @@ export type ConfigMenuItemsType = MenuItemsType & { hideSubNav?: boolean }
 
 const config: (t: ContextApi['t'], languageCode?: string) => ConfigMenuItemsType[] = (t, languageCode) => [
   {
-    label: t('Trade'),
+    label: t('Exchange'),
     icon: SwapIcon,
     fillIcon: SwapFillIcon,
     href: '/swap',
     showItemsOnMobile: false,
-    items: [
-      {
-        label: t('Swap'),
-        href: '/swap',
-      },
-      {
-        label: t('Limit'),
-        href: '/limit-orders',
-      },
-      {
-        label: t('Liquidity'),
-        href: '/liquidity',
-      },
-      {
-        label: t('Perpetual'),
-        href: `https://perp.pancakeswap.finance/${perpLangMap(languageCode)}/futures/BTCUSDT`,
-        type: DropdownMenuItemType.EXTERNAL_LINK,
-      },
-    ],
+    items: [],
   },
   {
-    label: t('Earn'),
+    label: t('Farms'),
     href: '/farms',
     icon: EarnIcon,
     fillIcon: EarnFillIcon,
-    items: [
-      {
-        label: t('Farms'),
-        href: '/farms',
-      },
-      {
-        label: t('Pools'),
-        href: '/pools',
-      },
-    ],
+    items: [],
   },
   {
-    label: t('Win'),
-    href: '/prediction',
-    icon: TrophyIcon,
-    fillIcon: TrophyFillIcon,
-    items: [
-      {
-        label: t('Trading Competition'),
-        href: '/competition',
-      },
-      {
-        label: t('Prediction (BETA)'),
-        href: '/prediction',
-      },
-      {
-        label: t('Lottery'),
-        href: '/lottery',
-      },
-    ],
+    label: t('Pools'),
+    href: '/pools',
+    icon: EarnIcon,
+    fillIcon: EarnFillIcon,
+    items: [],
+  },
+  {
+    label: t('Presale'),
+    href: '/presale',
+    icon: EarnIcon,
+    fillIcon: EarnFillIcon,
+    items: [],
   },
   {
     label: t('NFT'),
@@ -101,7 +68,7 @@ const config: (t: ContextApi['t'], languageCode?: string) => ConfigMenuItemsType
     ],
   },
   {
-    label: '',
+    label: t('Information'),
     href: '/info',
     icon: MoreIcon,
     hideSubNav: true,
