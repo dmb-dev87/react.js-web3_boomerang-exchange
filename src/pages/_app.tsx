@@ -22,6 +22,7 @@ import ErrorBoundary from '../components/ErrorBoundary'
 import Menu from '../components/Menu'
 import Providers from '../Providers'
 import GlobalStyle from '../style/Global'
+import "react-responsive-carousel/lib/styles/carousel.min.css"
 
 const EasterEgg = dynamic(() => import('components/EasterEgg'), { ssr: false })
 

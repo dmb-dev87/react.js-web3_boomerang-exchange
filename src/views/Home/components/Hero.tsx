@@ -9,6 +9,7 @@ import styled, { keyframes } from 'styled-components'
 import bunnyImage from '../../../../public/images/home/lunar-bunny/bunny@2x.png'
 import CompositeImage, { CompositeImageProps } from './CompositeImage'
 import { SlideSvgDark, SlideSvgLight } from './SlideSvg'
+import { Carousel } from 'react-responsive-carousel'
 
 const flyingAnim = () => keyframes`
   from {
@@ -96,46 +97,20 @@ const Hero = () => {
 
   return (
     <>
-      {/* <BgWrapper>
-        <InnerWrapper>{theme.isDark ? <SlideSvgDark width="100%" /> : <SlideSvgLight width="100%" />}</InnerWrapper>
-      </BgWrapper> */}
-      <Flex
-        position="relative"
-        flexDirection={['column-reverse', null, null, 'row']}
-        alignItems={['flex-end', null, null, 'center']}
-        justifyContent="center"
-        mt={[account ? '280px' : '50px', null, 0]}
-        id="homepage-hero"
-      >
-        <Flex flex="1" flexDirection="column">
-          <Heading scale="xxl" color="secondary" mb="24px">
-            {t('The moon is made of pancakes.')}
-          </Heading>
-          <Heading scale="md" mb="24px">
-            {t('Trade, earn, and win crypto on the most popular decentralized platform in the galaxy.')}
-          </Heading>
-          <Flex>
-            {!account && <ConnectWalletButton mr="8px" />}
-            <NextLinkFromReactRouter to="/swap">
-              <Button variant={!account ? 'secondary' : 'primary'}>{t('Trade Now')}</Button>
-            </NextLinkFromReactRouter>
-          </Flex>
-        </Flex>
-        <Flex
-          height={['192px', null, null, '100%']}
-          width={['192px', null, null, '100%']}
-          flex={[null, null, null, '1']}
-          mb={['24px', null, null, '0']}
-          position="relative"
-        >
-          <BunnyWrapper>
-            <Image src={bunnyImage} priority placeholder="blur" alt={t('Lunar bunny')} />
-          </BunnyWrapper>
-          <StarsWrapper>
-            <CompositeImage {...starsImage} />
-          </StarsWrapper>
-        </Flex>
-      </Flex>
+      <Carousel infiniteLoop={true} showThumbs={false} showStatus={false} autoPlay={true} interval={3000}>
+        <div>
+          <img src="images/1.png" />
+        </div>
+        <div>
+          <img src="images/2.png" />
+        </div>
+        <div>
+          <img src="images/3.png" />
+        </div>
+        <div>
+          <img src="images/4.png" />
+        </div>
+      </Carousel>
     </>
   )
 }

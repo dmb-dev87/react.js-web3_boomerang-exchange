@@ -19,10 +19,6 @@ import MultipleBanner from './components/Banners/MultipleBanner'
 
 const StyledHeroSection = styled(PageSection)`
   padding-top: 16px;
-
-  ${({ theme }) => theme.mediaQueries.md} {
-    padding-top: 48px;
-  }
 `
 
 const UserBannerWrapper = styled(Container)`
