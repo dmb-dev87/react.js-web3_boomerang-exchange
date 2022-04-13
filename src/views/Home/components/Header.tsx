@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Flex, Heading, Text } from '@pancakeswap/uikit'
+import { Flex, Heading, Text } from '@boomerangexchange/uikit'
 import { useTranslation } from 'contexts/Localization'
 import ConnectWalletButton from 'components/ConnectWalletButton'
 import { useWeb3React } from '@web3-react/core'

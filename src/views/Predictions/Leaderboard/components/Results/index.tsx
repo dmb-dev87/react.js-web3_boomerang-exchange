@@ -1,4 +1,4 @@
-import { Box, Button, Grid, Flex, useMatchBreakpoints, AutoRenewIcon } from '@pancakeswap/uikit'
+import { Box, Button, Grid, Flex, useMatchBreakpoints, AutoRenewIcon } from '@boomerangexchange/uikit'
 import { useAppDispatch } from 'state'
 import {
   useGetLeaderboardHasMoreResults,

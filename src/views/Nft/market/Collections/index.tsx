@@ -13,7 +13,7 @@ import {
   Table,
   Th,
   Card,
-} from '@pancakeswap/uikit'
+} from '@boomerangexchange/uikit'
 import useSWRImmutable from 'swr/immutable'
 import orderBy from 'lodash/orderBy'
 import { getLeastMostPriceInCollection } from 'state/nftMarket/helpers'

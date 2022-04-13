@@ -1,4 +1,4 @@
-import { Flex, Text } from '@pancakeswap/uikit'
+import { Flex, Text } from '@boomerangexchange/uikit'
 import { ReactElement } from 'react-markdown'
 
 interface TextIconProps {

@@ -24,7 +24,7 @@
     "inlineSources": true,
     "sourceRoot": "/",
     "paths": {
-      "@pancakeswap/uikit": ["../packages/uikit/src/index.ts"]
+      "@boomerangexchange/uikit": ["../packages/uikit/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "cypress"],

@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react'
 import { Currency, CurrencyAmount, Fraction, Percent, Token, TokenAmount } from '@pancakeswap/sdk'
-import { Flex, InjectedModalProps, Text } from '@pancakeswap/uikit'
+import { Flex, InjectedModalProps, Text } from '@boomerangexchange/uikit'
 import { useTranslation } from 'contexts/Localization'
 import TransactionConfirmationModal, {
   ConfirmationModalContent,

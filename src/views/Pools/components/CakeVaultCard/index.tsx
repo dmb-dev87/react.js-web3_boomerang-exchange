@@ -10,7 +10,7 @@ import {
   LinkExternal,
   Link,
   TokenPairImage,
-} from '@pancakeswap/uikit'
+} from '@boomerangexchange/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { useWeb3React } from '@web3-react/core'
 import ConnectWalletButton from 'components/ConnectWalletButton'
